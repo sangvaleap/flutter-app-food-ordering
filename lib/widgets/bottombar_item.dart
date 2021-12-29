@@ -40,7 +40,7 @@ class BottomBarItem extends StatelessWidget {
             padding: EdgeInsets.all(7),
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: isActive ? activeColor.withOpacity(.15) : Colors.transparent,
+              color: isActive ? Colors.white.withOpacity(.15) : Colors.transparent,
             ),
             child: Icon(icon, size: 26, color: isActive ? activeColor : color),
           )

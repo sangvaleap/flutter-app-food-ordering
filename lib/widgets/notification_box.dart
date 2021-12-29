@@ -1,5 +1,6 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NotificationBox extends StatelessWidget {
   const NotificationBox({ Key? key }) : super(key: key);
@@ -16,7 +17,7 @@ class NotificationBox extends StatelessWidget {
         padding: EdgeInsets.all(3),
         position: BadgePosition.topEnd(top: -7, end: 2),
         badgeContent: Text('', style: TextStyle(color: Colors.white),),
-        child: Icon(Icons.notifications_rounded)
+        child: Icon(FontAwesomeIcons.solidBell, size: 20,)
       ),
     );
   }

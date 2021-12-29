@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_app/theme/color.dart';
 import 'package:food_app/utils/data.dart';
 import 'package:food_app/widgets/category_item.dart';
 import 'package:food_app/widgets/custom_textfield.dart';
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               Expanded(
                 child: Container(
                   alignment: Alignment.centerLeft,
-                  child: Icon(Icons.vertical_distribute_rounded,))
+                  child: Icon(Icons.clear_all_rounded, size: 28,))
               ),
               NotificationBox()
           ],),
@@ -46,7 +47,6 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SizedBox(height: 15,),
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
               child: Text("Hello Sangvaleap!", style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),),
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
             SizedBox(height: 20,),
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
-              child: CustomTextBox()
+              child: CustomTextBox(hint: "Search", prefix: Icon(Icons.search, color: darker), suffix: Icon(Icons.filter_list_outlined, color: primary))
             ),
             SizedBox(height: 25,),
             Container(
@@ -76,13 +76,19 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 25,),
             Container(
-              margin: EdgeInsets.only(left: 15),
+              margin: EdgeInsets.only(left: 0),
               child: listCategories(),
             ),
             SizedBox(height: 20,),
             Container(
               margin: EdgeInsets.only(left: 15, right: 15),
-              child: Text("Popular", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Popular", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Text("See all", style: TextStyle(fontSize: 14, color: darker),),
+                ],
+              ),
             ),
             SizedBox(height: 5,),
             Container(
@@ -117,7 +123,7 @@ class _HomePageState extends State<HomePage> {
     return
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
-        padding: EdgeInsets.only(bottom: 5),
+        padding: EdgeInsets.only(bottom: 5, left: 15),
         child: Row(
           children: lists
         ),
