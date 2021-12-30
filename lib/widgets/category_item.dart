@@ -15,7 +15,7 @@ class CategoryItem extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.all(10),
         margin: EdgeInsets.only(right: 10),
-        width: 85,
+        width: 90,
         decoration: BoxDecoration(
           color: seleted ? primary : cardColor,
           borderRadius: BorderRadius.circular(10),
