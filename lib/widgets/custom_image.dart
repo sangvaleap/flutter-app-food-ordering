@@ -19,9 +19,8 @@ class CustomImage extends StatelessWidget {
     return 
       Container(width: width, height: height,
         decoration: BoxDecoration(
-          border: Border.all(color: borderColor ?? Theme.of(context).cardColor, width: borderWidth), 
+          border: Border.all(color: borderColor ?? cardColor, width: borderWidth), 
           color: bgColor,
-          // shape: BoxShape.circle,
           borderRadius: BorderRadius.circular(radius),
           boxShadow: [
             BoxShadow(

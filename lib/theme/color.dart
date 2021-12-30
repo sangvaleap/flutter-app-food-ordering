@@ -7,6 +7,7 @@ const cardColor = Color(0xFFEDF0F3);
 const mainColor = Color(0xFF000000);
 const appBgColor = Color(0xFFFAFAFA);
 const shadowColor = Colors.black87;
+const textBoxColor = Color(0xFFe9e9e9);
 
 const bottomBarColor = Colors.black;
 const inActiveColor = Color(0xFF3E4249);

@@ -10,7 +10,7 @@ List populars = [
     "price": "\$20.50",
     "name": "Cheesy Stake",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.3",
     "rate_number": "273"
@@ -32,7 +32,7 @@ List populars = [
     "price": "\$8.50",
     "name": "Milk Breakfast",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.3",
     "rate_number": "273"
@@ -81,7 +81,7 @@ const List featured = [
     "price": "\$18.75",
     "name": "Mix Pizza",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.3",
     "rate_number": "273"
@@ -92,7 +92,7 @@ const List featured = [
     "is_favorited": false,
     "name": "Greeny Salad",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.8",
     "rate_number": "273"
@@ -103,7 +103,7 @@ const List featured = [
     "name": "Greeny Salad",
     "price" : "\$15.25",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.3",
     "rate_number": "273"
@@ -113,7 +113,7 @@ const List featured = [
     "price": "\$5.50",
     "name": "Greeny Salad",
     "description": "Breakfast and Brunch - American - Sandwich",
-    "time": "20-30 Min",
+    "sources": "Egg - Salad",
     "is_favorited": true,
     "delivery_fee": "\$1.49 Delivery Fee",
     "rate": "4.5",

@@ -4,7 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:food_app/theme/color.dart';
 import 'package:food_app/utils/data.dart';
 import 'package:food_app/widgets/category_item.dart';
-import 'package:food_app/widgets/custom_textfield.dart';
+import 'package:food_app/widgets/custom_textbox.dart';
 import 'package:food_app/widgets/feature_item.dart';
 import 'package:food_app/widgets/notification_box.dart';
 import 'package:food_app/widgets/popular_item.dart';
@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
                   alignment: Alignment.centerLeft,
                   child: Icon(Icons.clear_all_rounded, size: 28,))
               ),
-              NotificationBox()
+              NotificationBox(number: 1,)
           ],),
         ),
         body: getBody(),
@@ -92,7 +92,6 @@ class _HomePageState extends State<HomePage> {
             ),
             SizedBox(height: 5,),
             Container(
-              margin: EdgeInsets.only(left: 15),
               child: listPopulars(),
             ),
             SizedBox(height: 20,),
@@ -105,7 +104,7 @@ class _HomePageState extends State<HomePage> {
               margin: EdgeInsets.only(left: 15, right: 15),
               child: listFeatured(),
             ),
-            SizedBox(height: 25,),
+            SizedBox(height: 20,),
           ],
         ),
       );
@@ -134,6 +133,7 @@ class _HomePageState extends State<HomePage> {
     return
       SingleChildScrollView(
         scrollDirection: Axis.horizontal,
+        padding: EdgeInsets.only(left: 15),
         child: Row(
           children: List.generate(populars.length, 
             (index) => PopularItem(data: populars[index])

@@ -24,7 +24,7 @@ class FeaturedItem extends StatelessWidget {
               color: shadowColor.withOpacity(0.1),
               spreadRadius: 1,
               blurRadius: 1,
-              offset: Offset(1, 1), // changes position of shadow
+              offset: Offset(0, 1), // changes position of shadow
             ),
           ],
         ),
@@ -43,7 +43,7 @@ class FeaturedItem extends StatelessWidget {
                 children: [
                   Text(data["name"],  maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
                   SizedBox(height: 3,),
-                  Text("Egg - Salad", maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 12, color: Colors.grey)),
+                  Text(data["sources"], maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 12, color: Colors.grey)),
                   SizedBox(height: 4,),
                   Row(children: [
                     Icon(Icons.star_rounded, size: 14, color: primary,),
