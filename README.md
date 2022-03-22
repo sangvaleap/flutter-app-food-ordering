@@ -1,4 +1,4 @@
-# Food Ordering App
+# Food Ordering App - Flutter
 
 - Preview video: https://youtu.be/h1Cw7IoJByU
 - [My Twitter](https://twitter.com/sangvaleap)
