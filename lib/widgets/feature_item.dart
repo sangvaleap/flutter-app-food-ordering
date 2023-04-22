@@ -5,7 +5,8 @@ import 'package:food_app/widgets/custom_image.dart';
 import 'favorite_box.dart';
 
 class FeaturedItem extends StatelessWidget {
-  const FeaturedItem({ Key? key, required this.data, this.onTap}) : super(key: key);
+  const FeaturedItem({Key? key, required this.data, this.onTap})
+      : super(key: key);
   final data;
   final GestureTapCallback? onTap;
 
@@ -32,37 +33,82 @@ class FeaturedItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CustomImage(
-              data["image"], 
-              width: 60, height:60,
+              data["image"],
+              width: 60,
+              height: 60,
               radius: 10,
             ),
             SizedBox(width: 15),
             Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(data["name"],  maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600)),
-                  SizedBox(height: 3,),
-                  Text(data["sources"], maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 12, color: Colors.grey)),
-                  SizedBox(height: 4,),
-                  Row(children: [
-                    Icon(Icons.star_rounded, size: 14, color: primary,),
-                    SizedBox(width: 2,),
-                    Text(data["rate"] + " (" + data["rate_number"] + ")", style: TextStyle(fontSize: 12, color: primary)),
-                  ],)
-                ],
-              ),
+              child: _buildItemInfo(),
             ),
-            Column(
-              children: <Widget>[
-                Text(data["price"],  maxLines: 1, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: 14, fontWeight: FontWeight.w500, color: primary)),
-                SizedBox(height: 10,),
-                FavoriteBox(iconSize: 13, isFavorited: data["is_favorited"],)
-              ],
-            ),
+            _buildItemPrice(),
           ],
         ),
       ),
+    );
+  }
+
+  _buildItemPrice() {
+    return Column(
+      children: <Widget>[
+        Text(
+          data["price"],
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(
+              fontSize: 14, fontWeight: FontWeight.w500, color: primary),
+        ),
+        SizedBox(
+          height: 10,
+        ),
+        FavoriteBox(
+          iconSize: 13,
+          isFavorited: data["is_favorited"],
+        )
+      ],
+    );
+  }
+
+  _buildItemInfo() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          data["name"],
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+        ),
+        SizedBox(
+          height: 3,
+        ),
+        Text(
+          data["sources"],
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: TextStyle(fontSize: 12, color: Colors.grey),
+        ),
+        SizedBox(
+          height: 4,
+        ),
+        Row(
+          children: [
+            Icon(
+              Icons.star_rounded,
+              size: 14,
+              color: primary,
+            ),
+            SizedBox(
+              width: 2,
+            ),
+            Text(
+              data["rate"] + " (" + data["rate_number"] + ")",
+              style: TextStyle(fontSize: 12, color: primary),
+            ),
+          ],
+        )
+      ],
     );
   }
 }

@@ -1,9 +1,14 @@
-
 import 'package:flutter/material.dart';
 import 'package:food_app/theme/color.dart';
 
 class CategoryItem extends StatelessWidget {
-  CategoryItem({ Key? key, required this.data, this.seleted = false, this.onTap}) : super(key: key);
+  const CategoryItem({
+    Key? key,
+    required this.data,
+    this.seleted = false,
+    this.onTap,
+  }) : super(key: key);
+
   final data;
   final bool seleted;
   final GestureTapCallback? onTap;
@@ -31,10 +36,20 @@ class CategoryItem extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(data["icon"], size: 17, color: seleted ? Colors.white : darker),
-            SizedBox(width: 7,),
-            Text(data["name"], maxLines: 1, overflow: TextOverflow.ellipsis, 
-              style: TextStyle(fontSize: 13, color: seleted ? Colors.white : darker),
+            Icon(
+              data["icon"],
+              size: 17,
+              color: seleted ? Colors.white : darker,
+            ),
+            SizedBox(width: 7),
+            Text(
+              data["name"],
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: TextStyle(
+                fontSize: 13,
+                color: seleted ? Colors.white : darker,
+              ),
             )
           ],
         ),

@@ -16,11 +16,10 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: primary,
         textTheme: GoogleFonts.latoTextTheme(
-          Theme.of(context).textTheme, // If this is not set, then ThemeData.light().textTheme is used.
+          Theme.of(context).textTheme,
         ),
       ),
-      home: RootApp()
+      home: const RootApp(),
     );
   }
-
 }
