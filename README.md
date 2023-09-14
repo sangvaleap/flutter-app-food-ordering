@@ -1,16 +1,13 @@
 # Food Ordering App - Flutter
 
 - Preview video: https://youtu.be/h1Cw7IoJByU
-- [My Twitter](https://twitter.com/sangvaleap)
-
+- Support my work: https://www.patreon.com/sangvaleap
+  
 - [My Patreon](https://www.patreon.com/sangvaleap)
-- [My Linkedin](https://www.linkedin.com/in/sangvaleap-vanny-353b25aa/)
+- [My Twitter](https://twitter.com/sangvaleap)
 - [My Upwork](https://www.upwork.com/freelancers/~01482fe63544bbcb48)
 
-- My Email: sangvaleap.vanny@gmail.com
-- UI/UX source: https://www.behance.net/gallery/131805657/Food-Delivery-UI-Kit
-
-=> To access complete source code, please join [My Patreon](https://www.patreon.com/sangvaleap)
+- UI/UX: https://www.behance.net/gallery/131805657/Food-Delivery-UI-Kit
 
 <img width="600" alt="Screen Shot 2022-01-01 at 1 08 04 PM" src="https://user-images.githubusercontent.com/86506519/147845117-f8533d4d-faec-477e-be2e-dfb3c3c573eb.png">
 <img width="600" alt="food2" src="https://user-images.githubusercontent.com/86506519/147852827-400269be-0c87-4a51-bc76-c4bec133016a.png">
