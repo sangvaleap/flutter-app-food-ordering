@@ -1,12 +1,24 @@
 # Food Ordering App - Flutter
 
+The application is a platform where users can view a list of nearby restaurants and foods offered by the restaurants, and place an order. The project will bring significant impact to both the restaurants and their customers. The application is out of complexity which will allow users to easily and conveniently complete their food orders at their comfort while the restaurant owners will extend their marketing platform and will significantly increase their sales and revenue. 
+
+By this version, features include:
+- Customers can view a list of nearby restaurants.
+- Customers can view the menu of a selected restaurant.
+- Customers can place an order from a selected restaurant.
+- Customers can track the status of their orders.
+- Customers can receive push notifications when their order is ready.
+
+# Development Setup
+
+- flutter pub get
+- flutter run
+
+# Links
+
 - Preview video: https://youtu.be/h1Cw7IoJByU
 - Support my work: https://www.patreon.com/sangvaleap
-  
-- [My Patreon](https://www.patreon.com/sangvaleap)
-- [My Twitter](https://twitter.com/sangvaleap)
-- [My Upwork](https://www.upwork.com/freelancers/~01482fe63544bbcb48)
-
+- My Twitter: https://twitter.com/sangvaleap
 - UI/UX: https://www.behance.net/gallery/131805657/Food-Delivery-UI-Kit
 
 <img width="600" alt="Screen Shot 2022-01-01 at 1 08 04 PM" src="https://user-images.githubusercontent.com/86506519/147845117-f8533d4d-faec-477e-be2e-dfb3c3c573eb.png">
